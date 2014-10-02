@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 /**
  * This class represents a pair of coordinates.
@@ -48,14 +47,6 @@ public class Cell {
 		}
 
 		return this.column;
-	}
-
-	/**
-	 * @return All of the neighbors of this cell
-	 */
-	public ArrayList<Cell> getNeighbors() {
-		// TODO: Implement
-		return null;
 	}
 
 }
