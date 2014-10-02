@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * 
  */
@@ -9,7 +7,7 @@ import java.util.ArrayList;
  *
  */
 public class GameBoard {
-	private ArrayList<Cell> cells = new ArrayList<Cell>();
+	private boolean[][] cells;
 
 	private int rows;
 	private int columns;
@@ -17,6 +15,8 @@ public class GameBoard {
 	public GameBoard(int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
+
+		cells = new boolean[columns][rows];
 	}
 
 	public int getMaxRows() {
@@ -25,6 +25,11 @@ public class GameBoard {
 
 	public int getMaxColumns() {
 		return this.columns;
+	}
+
+	public Cell getNeighbors(Cell cell) {
+
+		return null;
 	}
 
 }
